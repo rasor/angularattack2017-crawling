@@ -52,21 +52,21 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
+  .state('tab.places', {
+      url: '/places',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-places': {
+          templateUrl: 'templates/tab-places.html',
+          controller: 'PlacesCtrl'
         }
       }
     })
     .state('tab.chat-detail', {
-      url: '/chats/:chatId',
+      url: '/places/:chatId',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
+        'tab-places': {
+          templateUrl: 'templates/place-detail.html',
+          controller: 'PlaceDetailCtrl'
         }
       }
     })
@@ -76,7 +76,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',
     views: {
       'tab-settings': {
         templateUrl: 'templates/tab-settings.html',
-        controller: 'AccountCtrl'
+        controller: 'SettingsCtrl'
       }
     }
   });
