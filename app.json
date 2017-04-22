@@ -1,0 +1,7 @@
+{
+  "name": "Ionic Starter",
+  "description": "A simple Ionic app for Heroku",
+  "repository": "httpshttps://github.com/Hackbit/angularattack2017-crawling",
+  "logo": "http://ionicframework.com/img/ionic-logo-blog.png",
+  "keywords": ["ionic", "static"]
+}
