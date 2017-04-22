@@ -1,6 +1,9 @@
 # angularattack2017-crawling 
 
-# Demo
+# Installation IOS
+On IOS use GapCoder https://github.com/rasor/gapcoder-execution to clone this repo from
+
+# Web Demo
 http://crawling.2017.angularattack.io/ and https://angularattack2017-crawling.herokuapp.com/
 
 # Credits

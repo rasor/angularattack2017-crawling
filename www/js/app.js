@@ -5,7 +5,9 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','nemLogging','ui-leaflet'])
+"use strict";
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',
+  'nemLogging','ui-leaflet','geolocation'])
 
 .run(['$ionicPlatform', function($ionicPlatform) {
   $ionicPlatform.ready(function() {

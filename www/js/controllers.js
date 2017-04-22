@@ -1,45 +1,28 @@
+"use strict";
 angular.module('starter.controllers', [])
 
-.controller('MapCtrl', ['$scope', function($scope) {
-
-  /**
-  * Once state loaded, get put map on scope.
-  */
-  // $scope.$on("$stateChangeSuccess", function() {
-  //   alert('hej');
-  // });
+.controller('MapCtrl', ['$scope', 'geolocation', function($scope, geolocation) {
 
   $scope.map = {
     defaults: {
-        //haritayı alacağımız sunucu
         //tileLayer: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
         //maxZoom: 18,
-        //zoomControlPosition: 'bottomleft'
+        zoomControlPosition: 'bottomleft'
     },
-    //haritanın merkezi
-    center: {
-        lat: 40,
-        lng: 29,
-        zoom: 12
+    centerusa: {
+        lat: 37,
+        lng: -110,
+        zoom: 4
     }
   };
 
-    // angular.extend($scope, {
-    //     defaults: {
-    //         scrollWheelZoom: false
-    //     }
-    // });
+  geolocation.getLocation().then(function(data){
+    $scope.map.centerusa.lat = data.coords.latitude;
+    $scope.map.centerusa.lng = data.coords.longitude;
+    $scope.map.centerusa.zoom = 12;
+    console.log('getLocation():'+JSON.stringify($scope.map.centerusa));
+  });
 
-  // angular.extend($scope, {
-  //     defaults: {
-  //         scrollWheelZoom: false,
-  //         attributionControl: true,
-  //         tileLayer: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-  //         tileLayerOptions: {
-  //             attribution: '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  //         },
-  //     }
-  // });  
 }])
 
 .controller('ChatsCtrl', ['$scope', 'Chats', function($scope, Chats) {

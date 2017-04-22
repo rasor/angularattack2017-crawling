@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "ui-leaflet": "~2.0.0",
-    "angular-simple-logger": "~0.1.7"
+    "angular-simple-logger": "~0.1.7",
+    "angularjs-geolocation": "~0.1.1"
   }
 }
