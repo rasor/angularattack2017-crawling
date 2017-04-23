@@ -2,7 +2,8 @@
 angular.module('starter.services.masterdata', [])
 
 .factory('VenueTypes', function() {
-  // venueTypes (for generatedata): ['Hotel']|['Restaurant']|['PetShop']|['Wellness']|['Park']
+  // venueTypes (for generatedata): 
+  //['Hotel']|['Restaurant']|['Shop']|['Wellness']|['Park']|['Beautysalon']|['Hospital']|['Photographer']|['Travel']|['Pension']|['Contest']|['School']|['Event']
   // map venueTypes to ionic images - http://ionicons.com/1.5.2/cheatsheet.html
   var venueTypes = {
     Hotel: 'ion-home',
