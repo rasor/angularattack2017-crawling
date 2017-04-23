@@ -9,10 +9,10 @@ This is an app with the tabs
 The places on the map is divided into one or more of the categories
 * Hotel: 'ion-home',
 * Restaurant: 'ion-fork',
-* PetShop: 'ion-ios-cart',
+* Shop: 'ion-ios-cart',
 * Wellness: 'ion-happy',
 * Park: 'ion-leaf',
-* BeautySalon: 'ion-scissors',
+* Beautysalon: 'ion-scissors',
 * Hospital: 'ion-ios-medkit',
 * Photographer: 'ion-camera',
 * Travel: 'ion-briefcase',
@@ -24,6 +24,7 @@ The places on the map is divided into one or more of the categories
 Places are shown with an icon corresponding to its category.
 
 Depending of what the time allows the todo list contains:
+* Add gallery with for intro and help
 * Replace hardcoded places with places from various APIS
 * Add central DB, so ratings and perhaps new places can be stored
 * Add ratings to various pages
@@ -34,13 +35,13 @@ Depending of what the time allows the todo list contains:
 # Installation IOS
 * On IOS use GapCoder https://github.com/rasor/gapcoder-execution to clone this repo from. This might only be possible if you fork it.
 * Or use Ionic 1 CLI:
-
-`text
+```sh
 ionic start crawling https://github.com/Hackbit/angularattack2017-crawling
 cd crawling
 ionic platform add ios
 ionic platform add android
-`ionic serve
+ionic serve
+```
 
 # Web Demo
 http://crawling.2017.angularattack.io/ and https://angularattack2017-crawling.herokuapp.com/

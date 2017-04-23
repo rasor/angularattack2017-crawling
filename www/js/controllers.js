@@ -1,29 +1,45 @@
 "use strict";
 angular.module('starter.controllers', [])
 
-.controller('MapCtrl', ['$scope', 'geolocation', function($scope, geolocation) {
+.controller('MapCtrl', ['$scope', 'geolocation', 'Places', function($scope, geolocation, Places) {
 
+  //Create a map using angular ui-leaflet directive - https://github.com/angular-ui/ui-leaflet
   $scope.map = {
     defaults: {
-        //tileLayer: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
-        //maxZoom: 18,
-        zoomControlPosition: 'bottomleft'
+      //tileLayer: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+      //maxZoom: 18,
+      zoomControlPosition: 'bottomleft'
     },
     centerusa: {
-        lat: 37,
-        lng: -110,
-        zoom: 4
+      lat: 37,
+      lng: -110,
+      zoom: 4
+    },
+    markers: {
+
     }
   };
 
+  //Center map to your location and zoom in
   geolocation.getLocation().then(function(data){
     $scope.map.centerusa.lat = data.coords.latitude;
     $scope.map.centerusa.lng = data.coords.longitude;
     $scope.map.centerusa.zoom = 12;
     console.log('getLocation():'+JSON.stringify($scope.map.centerusa));
+
+    $scope.map.markers.hereYouAreMarker = {
+      lat: data.coords.latitude,
+      lng: data.coords.longitude,
+      message: "Here are you",
+      focus: true,
+      draggable: false
+    };
   }), function(reason) {
     console.log('getLocation() failed:'+JSON.stringify(reason));
   };
+
+  //Put all places on the map
+  $scope.places = Places.all();
 
 }])
 
