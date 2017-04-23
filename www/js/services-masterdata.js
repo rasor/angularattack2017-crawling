@@ -8,10 +8,10 @@ angular.module('starter.services.masterdata', [])
   var venueTypes = {
     Hotel: 'ion-home',
     Restaurant: 'ion-fork',
-    PetShop: 'ion-ios-cart',
+    Shop: 'ion-ios-cart',
     Wellness: 'ion-happy',
     Park: 'ion-leaf',
-    BeautySalon: 'ion-scissors',
+    Beautysalon: 'ion-scissors',
     Hospital: 'ion-ios-medkit',
     Photographer: 'ion-camera',
     Travel: 'ion-briefcase',
