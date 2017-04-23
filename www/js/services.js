@@ -44,7 +44,7 @@ angular.module('starter.services', [])
   // Some fake testing data
   var places = [{
     id: 0,
-    name: 'Ben Sparrow',
+    name: 'Hotel beautiful beach',
     face: 'img/ben.png',
     address: '125 High Street, Reading, RG6 1PS',
     rating: 3,
@@ -55,25 +55,25 @@ angular.module('starter.services', [])
     }
   }, {
     id: 1,
-    name: 'Max Lynx',
+    name: 'Pink Park',
     face: 'img/max.png',
     rating: 5,
     venueTypes: ['Park'],
   }, {
     id: 2,
-    name: 'Adam Bradleyson',
+    name: 'Best Dogs',
     face: 'img/adam.jpg',
     rating: 4,
     venueTypes: ['PetShop'],
   }, {
     id: 3,
-    name: 'Perry Governor',
+    name: 'Spring Park',
     face: 'img/perry.png',
     rating: 5,
     venueTypes: ['Park'],
   }, {
     id: 4,
-    name: 'Mike Harrington',
+    name: 'Italian favorites',
     face: 'img/mike.png',
     rating: 3,
     venueTypes: ['Restarant'],
