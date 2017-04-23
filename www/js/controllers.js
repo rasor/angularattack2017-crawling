@@ -40,6 +40,10 @@ angular.module('starter.controllers', [])
   $scope.remove = function(place) {
     Places.remove(place);
   };
+  $scope.venue2iconName = function(venueTypeId){
+    console.log(venueTypeId);
+    return "ion-home";
+  };
 }])
 
 .controller('PlaceDetailCtrl', ['$scope', '$stateParams', 'Places', function($scope, $stateParams, Places) {
