@@ -1,46 +1,44 @@
 "use strict";
 angular.module('starter.services', [])
 
+.factory('VenueTypes', function() {
+  // venueTypes (for generatedata): ['Hotel']|['Restaurant']|['PetShop']|['Wellness']|['Park']
+  // map venueTypes to ionic images - http://ionicons.com/1.5.2/cheatsheet.html
+  var venueTypes = {
+    Hotel: 'ion-home',
+    Restaurant: 'ion-fork',
+    PetShop: 'ion-ios-cart',
+    Wellness: 'ion-happy',
+    Park: 'ion-leaf',
+    BeautySalon: 'ion-scissors',
+    Hospital: 'ion-ios-medkit',
+    Photographer: 'ion-camera',
+    Travel: 'ion-briefcase',
+    Pension: 'ion-archive',
+    Contest: 'ion-trophy',
+    School: 'ion-university',
+    Event: 'ion-arrow-shrink'
+  };
+
+  var venueCustomers = {
+    Dogs: 'For dogs',
+    Humans: 'Dogs allowed'
+  };
+
+  return {
+    all: function() {
+      return venueTypes;
+    },
+    getIconName: function(venueTypesKey) {
+      return venueTypes[venueTypesKey];
+    }    
+  };
+})
+
 .factory('Places', function() {
   // Might use a resource here that returns a JSON array
   // https://www.mockaroo.com/api/docs
   // http://www.generatedata.com/
-  // venueTypes (for generatedata): ['Hotel']|['Restaurant']|['PetShop']|['Wellness']|['Park']
-  // map venueTypes to ionic images - http://ionicons.com/1.5.2/cheatsheet.html
-  var venueTypes = [{
-    Hotel: 'ion-home'
-  },{
-    Restaurant: 'ion-fork'
-  },{
-    PetShop: 'ion-ios-cart'
-  },{
-    Wellness: 'ion-happy'
-  },{
-    Park: 'ion-leaf'
-  },{
-    Beautysalon: 'ion-scissors'
-  },{
-    Hospital: 'ion-ios-medkit'
-  },{
-    Photographer: 'ion-camera'
-  },{
-    Travel: 'ion-briefcase'
-  },{
-    Pension: 'ion-archive'
-  },{
-    Contest: 'ion-trophy'
-  },{
-    School: 'ion-university'
-  },{
-    Event: 'ion-arrow-shrink'
-  }];
-
-  var venueCustomers = [{
-    Dogs: 'For dogs'
-  },{
-    Humans: 'Dogs allowed'
-  }]
-
   // Some fake testing data
   var places = [{
     id: 0,
@@ -48,7 +46,7 @@ angular.module('starter.services', [])
     face: 'img/ben.png',
     address: '125 High Street, Reading, RG6 1PS',
     rating: 3,
-    venueTypes: ['Hotel', 'Restarant'],
+    venueTypes: ['Hotel', 'Restaurant'],
     coords: {
         lat: 51.455041,
         lng: -0.9690884
@@ -76,7 +74,7 @@ angular.module('starter.services', [])
     name: 'Italian favorites',
     face: 'img/mike.png',
     rating: 3,
-    venueTypes: ['Restarant'],
+    venueTypes: ['Restaurant'],
   }];
 
   return {
