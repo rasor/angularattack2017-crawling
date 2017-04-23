@@ -16,17 +16,27 @@ angular.module('starter.controllers', [])
       zoom: 4
     },
     markers: {},
+    //https://angular-ui.github.io/ui-leaflet/#!/examples/customized-markers
     icons: {
       default_icon: {},
       Hotel: {
-        iconUrl: 'img/ion-home.png',
-        shadowUrl: 'img/ion-home.png',
+        iconUrl: 'img/Hotel.png',
         iconSize:     [16, 16], // size of the icon
-        //shadowSize:   [50, 64], // size of the shadow
         iconAnchor:   [8, 16], // point of the icon which will correspond to marker's location
-        //shadowAnchor: [4, 62],  // the same for the shadow
         popupAnchor:  [0, -16] // point from which the popup should open relative to the iconAnchor
-      }
+      },
+      Restaurant: {iconUrl: 'img/Restaurant.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Shop: {iconUrl: 'img/Shop.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Wellness: {iconUrl: 'img/Wellness.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Hotel5: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Hotel6: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Hotel7: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Hotel8: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Hotel9: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Hotel10: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Hotel11: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Hotel12: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Hotel13: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] }
     }
   };
 
