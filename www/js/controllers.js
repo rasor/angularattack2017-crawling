@@ -21,7 +21,9 @@ angular.module('starter.controllers', [])
     $scope.map.centerusa.lng = data.coords.longitude;
     $scope.map.centerusa.zoom = 12;
     console.log('getLocation():'+JSON.stringify($scope.map.centerusa));
-  });
+  }), function(reason) {
+    console.log('getLocation() failed:'+JSON.stringify(reason));
+  };
 
 }])
 
@@ -35,13 +37,13 @@ angular.module('starter.controllers', [])
   //});
 
   $scope.places = Places.all();
-  $scope.remove = function(chat) {
-    Places.remove(chat);
+  $scope.remove = function(place) {
+    Places.remove(place);
   };
 }])
 
 .controller('PlaceDetailCtrl', ['$scope', '$stateParams', 'Places', function($scope, $stateParams, Places) {
-  $scope.chat = Places.get($stateParams.chatId);
+  $scope.currPlace = Places.get($stateParams.placeId);
 }])
 
 .controller('SettingsCtrl', ['$scope', function($scope) {
