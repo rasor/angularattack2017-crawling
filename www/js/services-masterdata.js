@@ -1,5 +1,5 @@
 "use strict";
-angular.module('starter.services', [])
+angular.module('starter.services.masterdata', [])
 
 .factory('VenueTypes', function() {
   // venueTypes (for generatedata): ['Hotel']|['Restaurant']|['PetShop']|['Wellness']|['Park']
