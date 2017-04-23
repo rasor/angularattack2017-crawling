@@ -28,15 +28,15 @@ angular.module('starter.controllers', [])
       Restaurant: {iconUrl: 'img/Restaurant.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
       Shop: {iconUrl: 'img/Shop.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
       Wellness: {iconUrl: 'img/Wellness.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
-      Hotel5: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
-      Hotel6: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
-      Hotel7: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
-      Hotel8: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
-      Hotel9: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
-      Hotel10: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
-      Hotel11: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
-      Hotel12: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
-      Hotel13: {iconUrl: 'img/ion-home.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] }
+      Park: {iconUrl: 'img/Park.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Beautysalon: {iconUrl: 'img/Beautysalon.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Hospital: {iconUrl: 'img/Hospital.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Photographer: {iconUrl: 'img/Photographer.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Travel: {iconUrl: 'img/Travel.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Pension: {iconUrl: 'img/Pension.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Contest: {iconUrl: 'img/Contest.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      School: {iconUrl: 'img/School.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] },
+      Event: {iconUrl: 'img/Event.png',iconSize: [16, 16], iconAnchor: [8, 16],popupAnchor: [0, -16] }
     }
   };
 
