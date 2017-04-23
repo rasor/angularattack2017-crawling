@@ -48,6 +48,13 @@ angular.module('starter.controllers', [])
 
 .controller('PlaceDetailCtrl', ['$scope', '$stateParams', 'Places', function($scope, $stateParams, Places) {
   $scope.currPlace = Places.get($stateParams.placeId);
+  $scope.getTitle = function(){
+    return $scope.currPlace.venueTypes[0] + ': ' + $scope.currPlace.name;
+  };
+  $scope.venue2iconName = function(venueTypeId){
+    console.log(venueTypeId);
+    return "ion-home";
+  };
 }])
 
 .controller('SettingsCtrl', ['$scope', function($scope) {
