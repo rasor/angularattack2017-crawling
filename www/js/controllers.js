@@ -15,8 +15,18 @@ angular.module('starter.controllers', [])
       lng: -110,
       zoom: 4
     },
-    markers: {
-
+    markers: {},
+    icons: {
+      default_icon: {},
+      Hotel: {
+        iconUrl: 'img/ion-home.png',
+        shadowUrl: 'img/ion-home.png',
+        iconSize:     [16, 16], // size of the icon
+        //shadowSize:   [50, 64], // size of the shadow
+        iconAnchor:   [8, 16], // point of the icon which will correspond to marker's location
+        //shadowAnchor: [4, 62],  // the same for the shadow
+        popupAnchor:  [0, -16] // point from which the popup should open relative to the iconAnchor
+      }
     }
   };
 
@@ -43,13 +53,15 @@ angular.module('starter.controllers', [])
   //angular.forEach(obj, iterator)
   angular.forEach($scope.places, function(place, idx) {
     //console.log(place.id);
+    let venueIcon = $scope.map.icons[place.venueTypes[0]];
     let coords = place.coords.split(', ');
     this[place.id] = {
       lat: parseFloat(coords[0]),
       lng: parseFloat(coords[1]),
       message: place.name,
       //focus: true,
-      draggable: false
+      draggable: false,
+      icon: venueIcon
     };
   }, $scope.map.markers);
 
