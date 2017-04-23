@@ -5,6 +5,41 @@ angular.module('starter.services', [])
   // Might use a resource here that returns a JSON array
   // https://www.mockaroo.com/api/docs
   // http://www.generatedata.com/
+  // venueTypes (for generatedata): ['Hotel']|['Restaurant']|['PetShop']|['Wellness']|['Park']
+  // map venueTypes to ionic images - http://ionicons.com/1.5.2/cheatsheet.html
+  var venueTypes = [{
+    Hotel: 'ion-home'
+  },{
+    Restaurant: 'ion-fork'
+  },{
+    PetShop: 'ion-ios-cart'
+  },{
+    Wellness: 'ion-happy'
+  },{
+    Park: 'ion-leaf'
+  },{
+    Beautysalon: 'ion-scissors'
+  },{
+    Hospital: 'ion-ios-medkit'
+  },{
+    Photographer: 'ion-camera'
+  },{
+    Travel: 'ion-briefcase'
+  },{
+    Pension: 'ion-archive'
+  },{
+    Contest: 'ion-trophy'
+  },{
+    School: 'ion-university'
+  },{
+    Event: 'ion-arrow-shrink'
+  }];
+
+  var venueCustomers = [{
+    Dogs: 'For dogs'
+  },{
+    Humans: 'Dogs allowed'
+  }]
 
   // Some fake testing data
   var places = [{
@@ -22,18 +57,26 @@ angular.module('starter.services', [])
     id: 1,
     name: 'Max Lynx',
     face: 'img/max.png',
+    rating: 5,
+    venueTypes: ['Park'],
   }, {
     id: 2,
     name: 'Adam Bradleyson',
     face: 'img/adam.jpg',
+    rating: 4,
+    venueTypes: ['PetShop'],
   }, {
     id: 3,
     name: 'Perry Governor',
     face: 'img/perry.png',
+    rating: 5,
+    venueTypes: ['Park'],
   }, {
     id: 4,
     name: 'Mike Harrington',
     face: 'img/mike.png',
+    rating: 3,
+    venueTypes: ['Restarant'],
   }];
 
   return {
