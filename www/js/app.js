@@ -6,7 +6,8 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 "use strict";
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services.masterdata',
+angular.module('starter', ['ionic', 'starter.controllers', 
+  'starter.services.masterdata', 'starter.services.places',
   'nemLogging','ui-leaflet','geolocation'])
 
 .run(['$ionicPlatform', function($ionicPlatform) {
