@@ -24,8 +24,10 @@ The places on the map is divided into one or more of the categories
 Places are shown with an icon corresponding to its category.
 
 Depending of what the time allows the todo list contains:
+* Goto jump to place details from map
 * Add gallery with for intro and help
 * Replace hardcoded places with places from various APIS
+(unfortunately the generated dummy data includes lots op places in the oceans and the coordinates doen not fit with their address)
 * Add central DB, so ratings and perhaps new places can be stored
 * Add ratings to various pages
 * Add "New Place" page
