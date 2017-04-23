@@ -20,11 +20,11 @@ angular.module('starter.controllers', [])
     }
   };
 
-  //Center map to your location and zoom in
+  //Center map to your location and zoom in and show your location
   geolocation.getLocation().then(function(data){
     $scope.map.centerusa.lat = data.coords.latitude;
     $scope.map.centerusa.lng = data.coords.longitude;
-    $scope.map.centerusa.zoom = 12;
+    $scope.map.centerusa.zoom = 5;//12;
     console.log('getLocation():'+JSON.stringify($scope.map.centerusa));
 
     $scope.map.markers.hereYouAreMarker = {
@@ -40,6 +40,18 @@ angular.module('starter.controllers', [])
 
   //Put all places on the map
   $scope.places = Places.all();
+  //angular.forEach(obj, iterator)
+  angular.forEach($scope.places, function(place, idx) {
+    //console.log(place.id);
+    let coords = place.coords.split(', ');
+    this[place.id] = {
+      lat: parseFloat(coords[0]),
+      lng: parseFloat(coords[1]),
+      message: place.name,
+      //focus: true,
+      draggable: false
+    };
+  }, $scope.map.markers);
 
 }])
 
