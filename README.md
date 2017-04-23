@@ -34,11 +34,12 @@ Depending of what the time allows the todo list contains:
 # Installation IOS
 * On IOS use GapCoder https://github.com/rasor/gapcoder-execution to clone this repo from. This might only be possible if you fork it.
 * Or use Ionic 1 CLI:
-`ionic start crawling https://github.com/Hackbit/angularattack2017-crawling
+`text
+ionic start crawling https://github.com/Hackbit/angularattack2017-crawling
 cd crawling
 ionic platform add ios
 ionic platform add android
-ionic serve`
+`ionic serve
 
 # Web Demo
 http://crawling.2017.angularattack.io/ and https://angularattack2017-crawling.herokuapp.com/

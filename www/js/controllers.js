@@ -41,7 +41,7 @@ angular.module('starter.controllers', [])
     Places.remove(place);
   };
   $scope.venue2iconName = function(venueTypeKey){
-    console.log(venueTypeKey);
+    // console.log(venueTypeKey);
     return VenueTypes.getIconName(venueTypeKey);
   };
 }])
@@ -52,7 +52,7 @@ angular.module('starter.controllers', [])
     return $scope.currPlace.venueTypes[0] + ': ' + $scope.currPlace.name;
   };
   $scope.venue2iconName = function(venueTypeKey){
-    console.log(venueTypeKey);
+    // console.log(venueTypeKey);
     return VenueTypes.getIconName(venueTypeKey);
   };
 }])

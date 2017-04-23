@@ -9,7 +9,6 @@ angular.module('starter.services.places', [])
   var places = [{
     id: 0,
     name: 'Hotel beautiful beach',
-    face: 'img/ben.png',
     address: '125 High Street, Reading, RG6 1PS',
     rating: 3,
     venueTypes: ['Hotel', 'Restaurant'],
@@ -20,27 +19,8 @@ angular.module('starter.services.places', [])
   }, {
     id: 1,
     name: 'Pink Park',
-    face: 'img/max.png',
     rating: 5,
     venueTypes: ['Park'],
-  }, {
-    id: 2,
-    name: 'Best Dogs',
-    face: 'img/adam.jpg',
-    rating: 4,
-    venueTypes: ['PetShop'],
-  }, {
-    id: 3,
-    name: 'Turner Trail',
-    face: 'img/perry.png',
-    rating: 5,
-    venueTypes: ['Park'],
-  }, {
-    id: 4,
-    name: 'Italian favorites',
-    face: 'img/mike.png',
-    rating: 3,
-    venueTypes: ['Restaurant'],
   }];
 
   return {
