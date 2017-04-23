@@ -27,7 +27,7 @@ angular.module('starter.controllers', [])
 
 }])
 
-.controller('PlacesCtrl', ['$scope', 'Places', function($scope, Places) {
+.controller('PlacesCtrl', ['$scope', 'Places', 'VenueTypes', function($scope, Places, VenueTypes) {
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),
@@ -40,20 +40,20 @@ angular.module('starter.controllers', [])
   $scope.remove = function(place) {
     Places.remove(place);
   };
-  $scope.venue2iconName = function(venueTypeId){
-    console.log(venueTypeId);
-    return "ion-home";
+  $scope.venue2iconName = function(venueTypeKey){
+    console.log(venueTypeKey);
+    return VenueTypes.getIconName(venueTypeKey);
   };
 }])
 
-.controller('PlaceDetailCtrl', ['$scope', '$stateParams', 'Places', function($scope, $stateParams, Places) {
+.controller('PlaceDetailCtrl', ['$scope', '$stateParams', 'Places', 'VenueTypes', function($scope, $stateParams, Places, VenueTypes) {
   $scope.currPlace = Places.get($stateParams.placeId);
   $scope.getTitle = function(){
     return $scope.currPlace.venueTypes[0] + ': ' + $scope.currPlace.name;
   };
-  $scope.venue2iconName = function(venueTypeId){
-    console.log(venueTypeId);
-    return "ion-home";
+  $scope.venue2iconName = function(venueTypeKey){
+    console.log(venueTypeKey);
+    return VenueTypes.getIconName(venueTypeKey);
   };
 }])
 

@@ -65,7 +65,7 @@ angular.module('starter.services', [])
     venueTypes: ['PetShop'],
   }, {
     id: 3,
-    name: 'Spring Park',
+    name: 'Turner Trail',
     face: 'img/perry.png',
     rating: 5,
     venueTypes: ['Park'],
