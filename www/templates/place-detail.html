@@ -7,9 +7,14 @@
 <ion-view view-title="{{getTitle()}}">
   <ion-content class="padding">
     <!-- <img ng-src="{{currPlace.face}}" style="width: 64px; height: 64px"> -->
-    <i class="icon {{venue2iconName(currPlace.venueTypes[0])}}"></i>
-    <p>
-      {{currPlace.venueTypes[0]}}
-    </p>
+    <h1>
+      <i class="icon {{venue2iconName(currPlace.venueTypes[0])}}"></i>
+      <span>{{currPlace.venueTypes[0]}}</span>
+    </h1>
+    <h2>{{currPlace.name}}</h2>
+    <p>Phone: {{currPlace.phone}}</p>
+    <p>Address: {{currPlace.address}}</p>
+    <p>City: {{currPlace.addrcity}}</p>
+    <p>Country: {{currPlace.addrco}}</p>
   </ion-content>
 </ion-view>
