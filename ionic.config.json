@@ -1,0 +1,8 @@
+{
+  "name": "ionCrawling",
+  "app_id": "",
+  "type": "ionic1",
+  "watchPatterns": [
+    "scss/**/*"
+  ]
+}
